@@ -80,7 +80,7 @@
           <div class="text-1">Hello, my name is</div>
           <div class="text-2">Bharath J</div>
           <div class="text-3">And I'm a <span class="typing"></span></div>
-          <a href="#">Hire Me</a>
+          <a href="#contact">Hire Me</a>
         </div>
       </div>
     </section>
@@ -103,9 +103,7 @@
               work environment where I can utilize my skills and knowledge
               effciently for organizational growth.
             </p>
-            <a href="./assets//My-Resume-updated (3).pdf" download
-              >Download Resume</a
-            >
+            <a href="./assets/Bharath_J_Resume.pdf" download>Download Resume</a>
           </div>
         </div>
       </div>
@@ -334,7 +332,7 @@
               <i class="fas fa-paint-brush"></i>
               <div class="text">B.E - EEE</div>
               <p>Sri Eshwar College of Engineering</p>
-              <p>CGPA - 7.35</p>
+              <p>CGPA - 7.52</p>
             </div>
           </div>
 
@@ -379,7 +377,7 @@
                 <i class="fas fa-map-marker-alt"></i>
                 <div class="info">
                   <div class="head">Address</div>
-                  <div class="sub-title">Ooty, Tamil Nadu.</div>
+                  <div class="sub-title">Coimbatore, Tamil Nadu.</div>
                 </div>
               </div>
               <div class="row">
@@ -393,23 +391,43 @@
           </div>
           <div class="column right">
             <div class="text">Message me</div>
-            <form action="#">
+            <form id="contactForm">
               <div class="fields">
                 <div class="field name">
-                  <input type="text" placeholder="Name" required />
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Name"
+                    required
+                  />
                 </div>
                 <div class="field email">
-                  <input type="text" placeholder="Email" required />
+                  <input
+                    type="text"
+                    id="email"
+                    name="email"
+                    placeholder="Email"
+                    required
+                  />
                 </div>
               </div>
               <div class="field">
-                <input type="text" placeholder="Subject" required />
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Subject"
+                  required
+                />
               </div>
               <div class="field textarea">
                 <textarea
                   cols="30"
                   rows="10"
-                  placeholder="Describe project..."
+                  id="message"
+                  name="message"
+                  placeholder="Describe..."
                   required
                 ></textarea>
               </div>
@@ -432,6 +450,14 @@
     </footer>
 
     <!-- External Javascript Files -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      emailjs.init("iSC-2_q3jESenZSdl");
+    </script>
     <script src="script.js"></script>
   </body>
   <!-- End of body tag -->
