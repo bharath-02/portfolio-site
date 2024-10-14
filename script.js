@@ -57,6 +57,8 @@ $(document).ready(function () {
       },
     },
   });
+
+  document.getElementById("currentYear").textContent = new Date().getFullYear();
 });
 
 document.getElementById("contactForm").addEventListener("submit", (event) => {
